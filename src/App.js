@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import CartPage from './components/CartPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<CartPage />} />
             {/* Add more routes here as needed */}
           </Routes>
         </main>

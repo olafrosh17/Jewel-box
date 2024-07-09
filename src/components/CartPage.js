@@ -1,18 +1,27 @@
 import React from 'react';
 import './CartPage.css';
+import ring1 from '../images/rectangle-1.png'
+import ring2 from '../images/rectangle-1b.png'
+import ring3 from '../images/rectangle-2.png'
+import ring4 from '../images/rectangle-3.png'
+import ring5 from '../images/rectangle-4.png'
+import ring6 from '../images/rectangle-4b.png'
+import ring7 from '../images/rectangle-4c.png'
+import ring8 from '../images/rectangle-4d.png'
+
 
 const cartItems = [
-  { id: 1, name: 'Persian Bubble Ring', price: '₦150,000', size: '8, Gold Vermeil', quantity: 1, image: 'path-to-image' },
-  { id: 2, name: 'Set of 3 Gold Rings with Pearl', price: '₦800,000', size: '7, Gold & Pearl', quantity: 1, image: 'path-to-image' },
+  { id: 1, name: 'Persian Bubble Ring', price: '₦150,000', size: '8, Gold Vermeil', quantity: 1, image:  ring1 },
+  { id: 2, name: 'Set of 3 Gold Rings with Pearl', price: '₦800,000', size: '7, Gold & Pearl', quantity: 1, image: ring2 },
 ];
 
 const recommendedItems = [
-  { id: 1, name: 'Scadic Ring Case', price: '₦20,000', image: 'path-to-image' },
-  { id: 2, name: 'Ring Dish', price: '₦10,000', image: 'path-to-image' },
-  { id: 3, name: 'Ring Holder', price: '₦36,000', image: 'path-to-image' },
-  { id: 4, name: 'Formal Ring Case', price: '₦25,000', image: 'path-to-image' },
-  { id: 5, name: 'Antique Jewel Box', price: '₦80,000', image: 'path-to-image' },
-  { id: 6, name: 'Ring Bowl', price: '₦9,800', image: 'path-to-image' },
+  { id: 1, name: 'Scadic Ring Case', price: '₦20,000', image: ring3},
+  { id: 2, name: 'Ring Dish', price: '₦10,000', image: ring4},
+  { id: 3, name: 'Ring Holder', price: '₦36,000', image: ring5 },
+  { id: 4, name: 'Formal Ring Case', price: '₦25,000', image: ring6 },
+  { id: 5, name: 'Antique Jewel Box', price: '₦80,000', image: ring7 },
+  { id: 6, name: 'Ring Bowl', price: '₦9,800', image: ring8 },
 ];
 
 const CartPage = () => {
@@ -82,50 +91,7 @@ const CartPage = () => {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>Help</h3>
-            <ul>
-              <li>Shipping</li>
-              <li>Returns & Exchanges</li>
-              <li>Warranty</li>
-              <li>FAQs</li>
-              <li>Customer Service</li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h3>Our Services</h3>
-            <ul>
-              <li>Membership</li>
-              <li>Style Guide</li>
-              <li>Product Care</li>
-              <li>Product Authentication</li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h3>About JewelBOX</h3>
-            <ul>
-              <li>Who we are</li>
-              <li>Where we are</li>
-              <li>Reviews</li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h3>Contact us</h3>
-            <p>Phone: +234 700 100 0000</p>
-            <p>Email: help@jewelbox.com</p>
-          </div>
-        </div>
-        <div className="footer-social">
-          <span>JewelBOX</span>
-          <div className="social-icons">
-            <a href="#"><img src="path-to-twitter-icon" alt="Twitter" /></a>
-            <a href="#"><img src="path-to-facebook-icon" alt="Facebook" /></a>
-            <a href="#"><img src="path-to-instagram-icon" alt="Instagram" /></a>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   );
 };
