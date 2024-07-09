@@ -1,38 +1,76 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Arial, sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+.App-header img{
+  object-fit:contain ;
+}
+
+
+.App-header h1 {
+  margin: 0;}
+
+  .App-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.App-header nav ul li {
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+.hero {
+  position: relative;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-image {
+  width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-shopping {
+  background-color: #a0d36a;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.filters {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.load-more {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
 }
